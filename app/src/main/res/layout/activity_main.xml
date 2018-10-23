@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:orientation="vertical"
+    android:rowCount="9"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/edit1"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="20dp"
+        android:hint="첫번째 숫자 입력"
+        android:layout_row="0"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="20dp"
+        android:hint="두번째 숫자 입력"
+        android:layout_row="1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_row="2">
+        <Button
+            android:text="1"
+            android:id="@+id/btnNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="2"
+            android:id="@+id/btnNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="3"
+            android:id="@+id/btnNum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="4"
+            android:id="@+id/btnNum4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="5"
+            android:id="@+id/btnNum5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_row="3">
+        <Button
+            android:text="6"
+            android:id="@+id/btnNum6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="7"
+            android:id="@+id/btnNum7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="8"
+            android:id="@+id/btnNum8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="9"
+            android:id="@+id/btnNum9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:text="0"
+            android:id="@+id/btnNum0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnAdd"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5dp"
+        android:layout_row="4"
+        android:text="더하기"/>
+    <Button android:id="@+id/btnSub"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5dp"
+        android:layout_row="5"
+        android:text="빼기"/>
+    <Button android:id="@+id/btnMul"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5dp"
+        android:layout_row="6"
+        android:text="곱하기"/>
+    <Button android:id="@+id/btnDiv"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5dp"
+        android:layout_row="7"
+        android:text="나누기"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_height="77dp"
+        android:layout_row="8"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="계산결과"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+</GridLayout>
